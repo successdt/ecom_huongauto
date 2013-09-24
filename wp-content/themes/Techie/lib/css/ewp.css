@@ -380,9 +380,11 @@ div.images {
 	height: 150px !important;
 */
 }
-.woocommerce div.summary {
+.woocommerce div.summary {\
+/*
 	width: 100% !important;
 	text-align: center;
+*/
 }
 .textwidget, .widget > ul {
 	background: #FFF;
@@ -455,4 +457,11 @@ div.images {
 }
 .products .product-category.last {
 	margin-right: 0 !important;
+}
+.woocommerce div.product div.images, .woocommerce #content div.product div.images, .woocommerce-page div.product div.images, .woocommerce-page #content div.product div.images {
+	width: 300px !important;
+	margin-left: 10px;
+}
+.ppt, .pp_description, .pp_gallery{
+	display: none !important;
 }
