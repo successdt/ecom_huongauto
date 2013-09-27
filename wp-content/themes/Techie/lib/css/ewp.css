@@ -438,12 +438,18 @@ div.images {
 	border: 1px solid #CCC;
 }
 .widget_recent_entries li {
-	white-space: nowrap;
 	overflow:hidden;
-	text-overflow:ellipsis;
 	margin-bottom: 5px !important;
+	padding: 7px 0 !important;
+	
 }
-
+.widget_recent_entries li + li {
+	border-top: 1px solid #CCC;
+	
+}
+.widget_recent_entries li a {
+	font-weight: bold;
+}
 .tp-caption {
 	background: #006699;
 	padding: 10px;
