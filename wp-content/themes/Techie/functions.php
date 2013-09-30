@@ -197,4 +197,13 @@
 	function changeFreePriceNotice($price, $product) {
 		return '0 VND';
 	}
+	
+	// Change the description tab title to product name
+	add_filter( 'woocommerce_product_tabs', 'wc_change_product_description_tab_title', 10, 1 );
+	function wc_change_product_description_tab_title( $tabs ) {
+	  global $post;
+		if ( isset( $tabs['description']['title'] ) )
+			$tabs['description']['title'] = 'Mô tả sản phẩm';
+		return $tabs;
+	}
 ?>
